@@ -198,10 +198,10 @@ def busca(arvore,procurado):
         return True
     elif procurado > arvore['raiz']:   
         arvore = arvore['direita']
-        busca(arvore,procurado)
+        return busca(arvore,procurado)
     elif procurado < arvore['raiz']:
         arvore = arvore['esquerda']
-        busca(arvore,procurado)
+        return busca(arvore,procurado)
 busca(arvore,30)
 
 
